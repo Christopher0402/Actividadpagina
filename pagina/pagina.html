@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Tecmilenio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Logo Tecmilenio -->
+        <img src="logo.jpeg" alt="Logo Tecmilenio" class="logo">
+
+        <!-- Tu foto -->
+        <img src="mi_foto.jpeg" alt="Mi foto" class="foto">
+
+        <!-- Nombre -->
+        <h1>Soto Betancourt Christopher Eduardo</h1>
+
+        <!-- Correo -->
+        <p>a107098518@tecmilenio.mx</p>
+
+        <!-- Botón -->
+        <button onclick="mostrarInfo()">Ver información</button>
+
+    </div>
+
+    <script>
+        function mostrarInfo() {
+            let ventana = window.open("", "", "width=400,height=400");
+            ventana.document.write(`
+                <h2>Matrícula: a107098518</h2>
+                <img src="mi_foto.jpeg" width="200">
+            `);
+        }
+    </script>
+
+</body>
+
+</html>
