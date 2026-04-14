@@ -11,7 +11,7 @@
 
     <div class="container">
 
-        <!-- Logo Tecmilenio -->
+        <!-- Logo -->
         <img src="logo.jpeg" alt="Logo Tecmilenio" class="logo">
 
         <!-- Tu foto -->
@@ -23,8 +23,15 @@
         <!-- Correo -->
         <p>a107098518@tecmilenio.mx</p>
 
-        <!-- Botón -->
+        <!-- Botón info -->
         <button onclick="mostrarInfo()">Ver información</button>
+
+        <!-- Botón bandera -->
+        <button onclick="mostrarBandera()">Ver bandera de México</button>
+
+        <!-- Imagen de bandera oculta -->
+        <img id="bandera" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" width="300"
+            style="display:none;">
 
     </div>
 
@@ -35,6 +42,10 @@
                 <h2>Matrícula: a107098518</h2>
                 <img src="mi_foto.jpeg" width="200">
             `);
+        }
+
+        function mostrarBandera() {
+            document.getElementById("bandera").style.display = "block";
         }
     </script>
 
